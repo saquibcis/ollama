@@ -1,0 +1,16 @@
+spring:
+  ai:
+    vectorstore:
+      chroma:
+        uri: http://localhost:8000  
+        collection-name: springboard_collection
+        initialize-schema: true
+
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        options:
+          model: mistral
+      embedding:
+        options:
+          model: mistral
